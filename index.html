@@ -19,6 +19,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="queries.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
 
@@ -54,13 +55,17 @@
               Access them wherever you need, share and collaborate with friends,
               family, and co-workers.
             </p>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email..."
-            />
-            <button class="btn">Get Started</button>
+            <form>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="hero-email"
+                placeholder="Enter your email..."
+                required
+              />
+              <button class="btn btn-hero">Get Started</button>
+            </form>
           </div>
           <div class="hero-img-box">
             <img
@@ -84,8 +89,8 @@
               Securely share files and folders with friends, family and
               colleagues for live collaboration. No email attachments required!
             </p>
-            <a href="#" class="action-link"
-              >See how Fylo works
+            <a href="#" class="action-link">
+              See how Fylo works
               <img
                 src="images/icon-arrow.svg"
                 alt="a right arrow icon"
@@ -140,15 +145,19 @@
             </p>
           </div>
           <div class="cta-sign-up">
-            <div class="flex-box">
+            <form class="cta-form">
               <input
                 type="email"
+                id="email"
                 name="email"
+                class="cta-email"
                 placeholder="email@example.com"
                 required
               />
-              <button class="btn no-margin">Get Started For Free</button>
-            </div>
+              <button class="btn no-margin cta-btn">
+                Get Started For Free
+              </button>
+            </form>
           </div>
         </div>
       </section>
