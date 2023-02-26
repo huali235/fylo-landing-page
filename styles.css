@@ -157,6 +157,11 @@ input {
   color: hsl(240, 75%, 98%);
   font-weight: 700;
   border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.btn:is(:hover, :active) {
+  background-color: hsl(224, 91%, 65%);
 }
 
 .about-section {
@@ -193,17 +198,24 @@ input {
 }
 
 .action-link:is(:link, :visited) {
-  text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
+  text-decoration: none;
   font-size: 1.6rem;
   color: hsl(170, 45%, 43%);
-  border-bottom: 1px solid hsl(170, 45%, 43%);
+}
+
+.arrow-icon:is(:hover, :active) {
+  fill: hsl(170, 80%, 64%);
+}
+
+.action-link:is(:hover, :active) {
+  color: hsl(170, 80%, 64%);
 }
 
 .testimonial {
-  max-width: 50%;
+  width: 50%;
   background-color: hsl(0, 0%, 100%);
   padding: 2.8rem 2.8rem;
   margin-top: 4.4rem;
@@ -268,7 +280,7 @@ input {
   padding-right: 21rem;
 }
 
-.flex-box {
+.cta-form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -346,4 +358,8 @@ footer {
   height: 2.4rem;
   width: 2.4rem;
   fill: hsl(240, 75%, 98%);
+}
+
+.social-icon:is(:hover, :active) {
+  fill: hsl(224, 91%, 65%);
 }
